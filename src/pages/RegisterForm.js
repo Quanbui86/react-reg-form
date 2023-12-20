@@ -93,29 +93,29 @@ export default function RegisterForm(){
                         <form className="form" onSubmit={regHandle}>
                             <div className="group">
                                 <div className={`errorMsgDiv ${isUsernameRight?'':'visible'}`}><p className="text">*Username 4-20 characters</p></div>
-                                <label className={`username ${isUsernameFocused ? 'focus' : ''}`}><p className="labelText">Username</p></label>
-                                <input id="username" type="text" placeholder="Username" name="Username"
+                                <label htmlFor="username" className={`username ${isUsernameFocused ? 'focus' : ''}`}><p className="labelText">Username</p></label>
+                                <input className="input" id="username" type="text" placeholder="Username" name="Username"
                                     onFocus={()=>{setIsUsernameFocused(true)}} onBlur={handleUsername}
                                 />
                             </div>
                             <div className="group">
                                 <div className={`errorMsgDiv ${isPasswordRight?'':'visible'}`} ><p className="text">*Password 4-20 characters</p></div>
                                 <label  className={`password ${isPasswordFocused ? 'focus' : ''}`}><p className="labelText">Password</p></label>
-                                <input id="password" type="password" placeholder="Password" name="Password"
+                                <input className="input" id="password" type="password" placeholder="Password" name="Password"
                                     onFocus={()=>{setIsPasswordFocused(true)}} onBlur={handlePassword}
                                 />
                             </div>
                             <div className="group">
                                 <div className={`errorMsgDiv ${isNameRight?'':'visible'}`}><p className="text">*Name (a-z)(A-Z)(4-20 characters)</p></div>
                                 <label  className={`name ${isNameFocused ? 'focus' : ''}`}><p className="labelText">Your Name</p></label>
-                                <input id="name" type="text" placeholder="Your Name" name="Your Name"
+                                <input className="input" id="name" type="text" placeholder="Your Name" name="Your Name"
                                     onFocus={()=>{setIsNameFocused(true)}} onBlur={handleName}
                                 />
                             </div>
                             <div className="group">
                                 <div className="errorMsgDiv"><p className="text">Insert Your Birthday*</p></div>
-                                <label  className={`birth ${isBirthFocused ? 'focus' : ''}`}><p className="labelText">Birthday</p></label>
-                                <input id="birth" type="date" placeholder="Birthday" name="Birthday"
+                                <label className={`birth ${isBirthFocused ? 'focus' : ''}`}><p className="labelText">Birthday</p></label>
+                                <input className="input" id="birth" type="date" placeholder="Birthday" name="Birthday"
                                     onFocus={()=>{setIsBirthFocused(true)}} onBlur={(e)=>{e.target.value?setIsBirthFocused(true):setIsBirthFocused(false)}}/>
                             </div>
                             <div className="return-and-login">

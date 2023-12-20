@@ -150,21 +150,17 @@ h1, h2, h3, h4 {
     opacity: 0;
     transition: all 0.5s linear 0.2s;
 }
-input {
+.input {
     outline: none;
     position: absolute;
     height: 50px;
     width: 100%;
     top: 20px;
-    padding: 0 9.333px;
+    padding-left: 9px;
     border-radius: 3px;
     border: 1px gray solid;
     background-color: rgb(243, 243, 243);
     z-index: 3;
-    /*box-sizing: border-box;
-    height: 2.5rem;
-    
-    z-index: 1;*/
 }
 .text, .labelText {
     line-height: 20px;

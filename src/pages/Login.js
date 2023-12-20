@@ -65,14 +65,14 @@ export default function Login() {
               <div className="group">
                 <div className={`errorMsgDiv ${isUsernameAuth?'':'visible'}`}><p className="text">*Invalid username *</p></div>
                 <label className={`logName ${isUsernameFocused ? 'focus' : ''}`}><p className="labelText">Username</p></label>
-                <input id="logName" type="text" placeholder="Username" name="logName"
+                <input className="input" id="logName" type="text" placeholder="Username" name="logName"
                   onFocus={() => { setIsUsernameFocused(true) }} onBlur={handleUserLogin}
                 />
               </div>
               <div className="group">
                 <div className={`errorMsgDiv ${isPasswordAuth?'':'visible'}`}><p className="text">*Invalid password*</p></div>
                 <label className={`logPass ${isPasswordFocused?'focus':''}`}><p className="labelText">Password</p></label>
-                <input id="logPass" type="password" placeholder="Password" name="logPass"
+                <input className="input" id="logPass" type="password" placeholder="Password" name="logPass"
                   onFocus={() => { setIsPasswordFocused(true) }} onBlur={(event) => {event.target.value?setIsPasswordFocused(true):setIsPasswordFocused(false) }} />
               </div>
               <div className="return-and-login">
